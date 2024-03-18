@@ -26,8 +26,12 @@ export async function GET(req) {
         .catch((err) => {
             console.log(err.message);
         });
-    Response.setHeader('Cache-Control', 's-maxage=86400');
     return Response.json({
         list: JSON.parse(JSON.stringify(list))
+    }, {
+        status: 200,
+        headers: {
+            'Cache-Control': 's-maxage=86400'
+        },
     })
 }

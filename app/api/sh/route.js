@@ -17,7 +17,12 @@ export async function GET(req, res) {
         };
         const response = await fetch(url, options);
         const data = await response.json();
-        return new Response(`${Buffer.from(data.content, 'base64').toString('ascii')}`)
+        return new Response(`${Buffer.from(data.content, 'base64').toString('ascii')}`, {
+            status: 200,
+            headers: {
+                'Cache-Control': 's-maxage=86400'
+            },
+        })
 
     } catch (error) {
         return new Response(`File not found`)
