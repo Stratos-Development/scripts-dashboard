@@ -19,16 +19,16 @@ export default function Hero({ params }) {
                     <div className="item- px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
                         <h1 className='text-xl font-bold'>Install Docker Quick And Easy</h1>
                         <div className="grid mx-auto items-center gap-2">
-                            <p className='inline-flex items-baseline gap-1'>Click on the icon to copy the code below  <CC content={"wget -q https://scripts.statostech.xyz/api/sh?file=Docker%20Install/docker.sh -O install.sh; sudo bash ./install.sh"} /></p>
+                            <p className='inline-flex items-baseline gap-1'>Click on the icon to copy the code below  <CC content={"wget -q https://scripts.stratostech.xyz/api/sh?file=Docker%20Install/docker.sh -O install.sh; sudo bash ./install.sh"} /></p>
                             <SyntaxHighlighter language="bash" style={tomorrow} className="drop-shadow-xl">
-                                wget -q https://scripts.statostech.xyz/api/sh?file=Docker%20Install/docker.sh -O install.sh; sudo bash ./install.sh
+                                wget -q https://scripts.stratostech.xyz/api/sh?file=Docker%20Install/docker.sh -O install.sh; sudo bash ./install.sh
                             </SyntaxHighlighter>
                         </div>
                         <h1 className='text-xl font-bold'>Install Node.js Quick And Easy</h1>
                         <div className="grid mx-auto items-center gap-2">
-                            <p className='inline-flex items-baseline gap-1'>Click on the icon to copy the code below  <CC content={"wget -q https://scripts.statostech.xyz/api/sh?file=Node%20Install/node.sh -O install.sh; sudo bash ./install.sh"} /></p>
+                            <p className='inline-flex items-baseline gap-1'>Click on the icon to copy the code below  <CC content={"wget -q https://scripts.stratostech.xyz/api/sh?file=Node%20Install/node.sh -O install.sh; sudo bash ./install.sh"} /></p>
                             <SyntaxHighlighter language="bash" style={tomorrow} className="drop-shadow-xl">
-                                wget -q https://scripts.statostech.xyz/api/sh?file=Node%20Install/node.sh -O install.sh; sudo bash ./install.sh
+                                wget -q https://scripts.stratostech.xyz/api/sh?file=Node%20Install/node.sh -O install.sh; sudo bash ./install.sh
                             </SyntaxHighlighter>
                         </div>
                     </div>
