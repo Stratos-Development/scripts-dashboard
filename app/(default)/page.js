@@ -8,7 +8,7 @@ import WickedMpulse from '@/public/images/WickedMpulse.png'
 export default function Hero() {
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch(`/api/list`, { cache: 'force-cache' })
+    fetch(`https://scripts-api.stratostech.xyz/list`, { cache: 'force-cache' })
       .then((response) => response.json())
       .then((data) => {
         setData(data.list)
