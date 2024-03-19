@@ -1,9 +1,9 @@
 const list = []
 
 export async function GET(req, res) {
+    const searchParams = req.nextUrl.searchParams
+    const query = searchParams.get('file')
     try {
-        const searchParams = req.nextUrl.searchParams
-        const query = searchParams.get('file')
         if (!query) return Response.json({ error: "No file provided" })
         const url = `https://api.github.com/repos/Stratos-Development/Simple-Scripts/contents/Bash%20Scripts/${query}`;
         const options = {
