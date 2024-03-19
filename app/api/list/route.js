@@ -1,4 +1,3 @@
-
 let list = []
 await fetch('https://api.github.com/repos/Stratos-Development/Simple-Scripts/contents/Docker%20Setups', {
     headers: {
@@ -27,7 +26,7 @@ await fetch('https://api.github.com/repos/Stratos-Development/Simple-Scripts/con
     });
 export async function GET(req) {
     return Response.json({
-        list: JSON.parse(JSON.stringify(list))
+        list: list
     }, {
         status: 200,
         headers: {
