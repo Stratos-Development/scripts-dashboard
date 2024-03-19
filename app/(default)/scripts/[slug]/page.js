@@ -13,7 +13,7 @@ export default function Hero({ params }) {
             cache: 'force-cache',
             headers: {
                 'Accept': 'application/vnd.github+json',
-                'Authorization': process.env.GITHUB_TOKEN,
+                'Authorization': "Bearer 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",
                 'X-GitHub-Api-Version': '2022-11-28'
             }
         }).then((response) => response.json())
