@@ -26,7 +26,7 @@ export async function GET(req, res) {
 
     } catch (error) {
         console.log(error)
-        return new Response(`File not found`)
+        return new Response(error)
 
     }
 
