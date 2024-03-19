@@ -10,7 +10,7 @@ export async function GET(req, res) {
             method: 'GET',
             headers: {
                 Accept: 'application/vnd.github+json',
-                Authorization: 'Bearer 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',
+                Authorization: process.env.GITHUB_TOKEN,
                 'X-GitHub-Api-Version': '2022-11-28',
                 'User-Agent': 'Awesome-Octocat-App'
             }
