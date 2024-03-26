@@ -44,6 +44,7 @@ module.exports = {
         'architects-daughter': ['var(--font-architects-daughter)', 'sans-serif'],
       },
       fontSize: {
+        h2: '0.875rem',
         xs: '0.75rem',
         sm: '0.875rem',
         base: '1rem',
