@@ -8,7 +8,6 @@ export default function Header() {
   const pathname = usePathname()
   return (
     <header className="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm ">
-
       <nav className="mt-6 relative max-w-[100rem] w-full bg-white border border-gray-200 drop-shadow-xl shadow-black rounded-[36px] mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto dark:bg-gray-800 dark:border-gray-700" aria-label="Global">
         <div className="flex items-center justify-between">
           <Link href="/" className="block" aria-label="Stratos">
@@ -23,6 +22,7 @@ export default function Header() {
         </div>
         <div id="navbar-collapse-with-animation" className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
           <div className="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
+            <a className={`font-medium md:py-6 ${pathname.includes("scripts") ? "text-purple-600 hover:text-purple-500" : "text-gray-300 hover:text-gray-400"}`} href='/scripts' aria-current="page">Docker Scripts</a>
             <a className={`font-medium md:py-6 ${pathname.includes("sh") ? "text-purple-600 hover:text-purple-500" : "text-gray-300 hover:text-gray-400"}`} href='/sh' aria-current="page">Bash Scripts</a>
             {/* <a className={`font-medium md:py-6 ${pathname.includes("contact") ? "text-purple-600 hover:text-purple-500" : "text-gray-300 hover:text-gray-400"}`} href='/contact' aria-current="page">Contact</a> */}
           </div>
