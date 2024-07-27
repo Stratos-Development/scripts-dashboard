@@ -1,7 +1,7 @@
 "use client"
 import Link from 'next/link'
 import Image from 'next/image'
-import stratos from '@/public/images/Banner.png'
+import Logo from '@/public/images/Scripts-Logo.png'
 
 import { usePathname } from 'next/navigation'
 export default function Header() {
@@ -11,7 +11,7 @@ export default function Header() {
       <nav className="mt-6 relative max-w-[100rem] w-full bg-white border border-gray-200 drop-shadow-xl shadow-black rounded-[36px] mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto dark:bg-gray-800 dark:border-gray-700" aria-label="Global">
         <div className="flex items-center justify-between">
           <Link href="/" className="block" aria-label="Stratos">
-            <Image className="w-40 h-12 fill-current text-purple-600" width="12px" height='12px' alt="logo" src={stratos} />
+            <Image className="w-20 h-12 fill-current text-purple-600" width="12px" height='12px' alt="logo" src={Logo} />
           </Link>
           <div className="md:hidden">
             <button type="button" className="hs-collapse-toggle size-8 flex justify-center items-center text-sm font-semibold rounded-full border border-gray-200 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
