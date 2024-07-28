@@ -44,7 +44,7 @@ export default function Hero() {
                     {loading ? (
                         <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-6">
                             {skeletons.map((_, index) => (
-                                <div key={index} className="h-[120px] group flex flex-col border shadow-lg rounded-xl transition bg-gray-800 hover:bg-gray-850 dark:border-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                                <div key={index} className="h-[120px] w-[300px] group flex flex-col border shadow-lg rounded-xl transition bg-gray-800 hover:bg-gray-850 dark:border-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
                                     <div className="p-4 md:p-5 animate-pulse">
                                         <div className="flex">
                                             <div className="grow ms-5">
