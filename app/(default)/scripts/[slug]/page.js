@@ -1,15 +1,10 @@
 'use client'
-import Image from 'next/image'
-import stratos from '@/public/images/Stratos.png'
 import React, { useState, useEffect, useRef } from 'react';
-import Tundra from '@/public/images/Tundra.png'
 import Markdown from 'react-markdown'
-import WickedMpulse from '@/public/images/WickedMpulse.png'
 import { tomorrow } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 
 export default function Hero({ params }) {
-    const markdown = '# Hi, *Pluto*!'
     const [data, setData] = useState([]);
     const [markdown1, setMarkdownData] = useState([]);
     useEffect(() => {
