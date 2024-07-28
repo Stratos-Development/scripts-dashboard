@@ -1,6 +1,7 @@
 import './css/style.css'
 import { Inter, Architects_Daughter } from 'next/font/google'
 import Header from '@/components/ui/header'
+import Logo from '@/public/images/Scripts-Logo.png'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -16,9 +17,12 @@ const architects_daughter = Architects_Daughter({
 })
 
 export const metadata = {
-  title: "Easy Scripts",
-  description: "Discover and utilize pre-made Docker Compose and Bash scripts for a smoother development experience.",
+  title: "Easy Scripts - Streamline Your Development",
+  description: "Explore a collection of ready-to-use Docker Compose and Bash scripts designed to simplify your development workflow and enhance productivity.",
+  image: Logo,
+  color: "#9812dd"
 };
+
 export default function RootLayout({
   children
 }) {
