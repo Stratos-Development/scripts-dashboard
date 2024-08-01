@@ -24,3 +24,6 @@ To set up Stratos Scripts locally for development or deployment, follow these st
 
 Ensure that you have Node.js and npm installed on your system before proceeding with the installation. Additionally, make sure to configure any necessary backend services or databases according to the provided documentation.
 
+# License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
