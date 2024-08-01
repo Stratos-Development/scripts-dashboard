@@ -1,4 +1,4 @@
-<img src="https://cdn.stratosdev.xyz/images/branding/Banner.png" alt="drawing" height="200" width="400" style="display: block; margin-left: auto;margin-right: auto;"/>
+<img src="https://cdn.stratostech.xyz/images/branding/Banner.png" alt="drawing" height="200" width="400" style="display: block; margin-left: auto;margin-right: auto;"/>
 
 # Stratos Scripts
 
