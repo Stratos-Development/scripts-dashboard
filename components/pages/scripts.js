@@ -37,7 +37,7 @@ export default function Hero() {
                     <input
                         type="text"
                         className="w-full mb-6 p-3 drop-shadow-xl rounded-lg border border-gray-700 bg-gray-800 text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                        placeholder="Search scripts..."
+                        placeholder="🔍 Search scripts..."
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}
                     />
@@ -60,14 +60,14 @@ export default function Hero() {
                         ) : (
                             <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-6">
                                 {filteredData.map(x => (
-                                    <a key={x.name} className="transform hover:scale-105 transition-transform duration-300 ease-in-out h-[120px] group flex flex-col border drop-shadow-lg rounded-xl transition bg-gray-800 hover:bg-gray-850 dark:border-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href={"/scripts/" + x.name}>
+                                    <a key={x.name} className="transform hover:scale-105 transition-transform duration-300 ease-in-out h-[120px] group flex flex-col border drop-shadow-lg rounded-xl bg-gray-800 hover:bg-gray-850 dark:border-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href={"/scripts/" + x.name}>
                                         <div className="p-4 md:p-5">
                                             <div className="flex">
-                                                <div className="grow ms-5">
-                                                    <h3 className="font-semibold group-hover:text-gray-400 text-gray-200">
+                                                <div className="grow ">
+                                                    <h3 className="font-semibold text-center group-hover:text-gray-400 text-gray-200">
                                                         {x.name}
                                                     </h3>
-                                                    <p className="text-sm text-gray-400">
+                                                    <p className="text-sm text-gray-400 text-center">
                                                         {x.desc}
                                                     </p>
                                                 </div>

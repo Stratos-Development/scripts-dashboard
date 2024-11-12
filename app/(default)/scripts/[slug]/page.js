@@ -42,8 +42,8 @@ export default function Hero({ params }) {
                     )}
                     <Markdown className='px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto z-0'>{markdown1.toString()}</Markdown>
                     <div className="item- px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto z-0">
-                        <div className="grid w-[45rem] mx-auto items-center gap-2">
-                            <p className='inline-flex items-baseline gap-1'>Click on the icon to copy the code below <CC content={data} /></p>
+                        <div className="grid w-[45rem] mx-auto items-center gap-2 bg-gray-900 rounded-lg shadow-xl drop-shadow-xl p-10">
+                            <p className='inline-flex items-baseline gap-1 text-center justify-center'>Click on the icon to copy the code below <CC content={data} /></p>
                             <SyntaxHighlighter language="yml" style={tomorrow} className="drop-shadow-xl">
                                 {data}
                             </SyntaxHighlighter>
